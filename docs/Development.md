@@ -7,3 +7,7 @@
 ####Planned to be done in Future.Subject to change.
 
 **Moving Boxes
+**Color Box
+**Gallerific
+**FeaturedContentSlider
+**jcobb-basic-jquery-slider
