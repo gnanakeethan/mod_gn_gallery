@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>MOD_GN_GALLERY</name>
+	<author>Gnanakeethan Balasubramaniam</author>
+	<creationDate>March 2013</creationDate>
+	<copyright>Copyright (C) 2013 Gnanakeethan Balasubramaniam. All rights reserved.</copyright>
+	<license>GNU/GPL v3 or Later</license>
+	<authorEmail>support@gnanakeethan.com</authorEmail>
+	<authorUrl>www.gnanakeethan.com</authorUrl>
+	<version>1.0.0.2b</version>
+	<description>MOD_GN_GALLERY_DESC</description>
+	<files>
+		<filename module="mod_gn_gallery">mod_gn_gallery.php</filename>
+		<filename module="mod_gn_gallery">helper.php</filename>
+		<folder>assets</folder>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">languages/en-GB/en-GB.mod_gn_gallery.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="auto_id" type="radio" default="true" label="MOD_GN_AUTO_ID" description="MOD_GN_AUTO_ID_DESC">
+					<option value="true">JYES</option>
+					<option value="false">JNO</option>
+				</field>
+				<field name="gallery_mode" type="list" default="elastislide" label="MOD_GN_GALLERY_MODE" description="MOD_GN_GALLERY_MODE_DESC">
+					<option value='elastislide'>MOD_GN_ELASTISLIDE</option>
+					<!--Space to Add Other -->
+				</field>
+				<field name="gallery_load_jquery" type="list" default="true" label="MOD_GN_GALLERY_JQUERY_LOAD" description="MOD_GN_GALLERY_JQUERY_LOAD_DESC">
+					<option value="true">JYES</option>
+					<option value="false">JNO</option>
+				</field>
+			</fieldset>
+			<fieldset name="ELASTISLIDE">
+				<field name="elastislide_mode" type="list" label="MOD_GN_ELASTISLIDE_MODE" description="MOD_GN_ELASTISLIDE_MODE_DESC">					
+					<option value="select">MOD_GN_ELASTISLIDE_MODE_SELECT</option>
+					<option value="directory_based">MOD_GN_ELASTISLIDE_MODE_DIR</option>
+				</field>
+				<field name="elastislide_type" type="list" label="MOD_GN_ELASTISLIDE_TYPE" description="MOD_GN_ELASTISLIDE_TYPE_DESC">
+					<option value="horizontal">MOD_GN_ELASTISLIDE_HORIZONTAL</option>
+					<option value="vertical">MOD_GN_ELASTISLIDE_VERTICAL</option>
+					<option value="boxed">MOD_GN_ELASTISLIDE_BOXED</option>
+					<option value="fixed_bottom">MOD_GN_ELASTISLIDE_FIXED_BOTTOM</option>
+				</field>
+				<field name="elastislide_min" type="number" label="MOD_GN_ELASTISLIDE_MIN_ITEMS" description="MOD_GN_ELASTISLIDE_MIN_ITEMS_DESC"/>
+				<field name="elastislide_timing" type="number" label="MOD_GN_ELASTISLIDE_TIMING" description="MOD_GN_ELASTISLIDE_TIMING_DESC"/>			
+				<field name="elastislide_spacer" type="spacer" label="MOD_GN_SPACER"/>								
+				<!--Select Images Start-->					
+				<field name="elastislide_spacer" type="spacer" label="MOD_GN_ELASTISLIDE_MODE_SELECT_CONF"/>				
+				<field name="elastislide_selected_image_0" type="media" label="MOD_GN_ELASTISLIDE_SELECT_IMAGE" description="MOD_GN_ELASTISLIDE_SELECT_IMAGE_DESC"/>
+				<field name="elastislide_selected_image_1" type="media" label="MOD_GN_ELASTISLIDE_SELECT_IMAGE" description="MOD_GN_ELASTISLIDE_SELECT_IMAGE_DESC"/>
+				<field name="elastislide_selected_image_2" type="media" label="MOD_GN_ELASTISLIDE_SELECT_IMAGE" description="MOD_GN_ELASTISLIDE_SELECT_IMAGE_DESC"/>
+				<field name="elastislide_selected_image_3" type="media" label="MOD_GN_ELASTISLIDE_SELECT_IMAGE" description="MOD_GN_ELASTISLIDE_SELECT_IMAGE_DESC"/>
+				<field name="elastislide_selected_image_4" type="media" label="MOD_GN_ELASTISLIDE_SELECT_IMAGE" description="MOD_GN_ELASTISLIDE_SELECT_IMAGE_DESC"/>
+				<field name="elastislide_selected_image_5" type="media" label="MOD_GN_ELASTISLIDE_SELECT_IMAGE" description="MOD_GN_ELASTISLIDE_SELECT_IMAGE_DESC"/>
+				<field name="elastislide_selected_image_6" type="media" label="MOD_GN_ELASTISLIDE_SELECT_IMAGE" description="MOD_GN_ELASTISLIDE_SELECT_IMAGE_DESC"/>
+				<field name="elastislide_selected_image_7" type="media" label="MOD_GN_ELASTISLIDE_SELECT_IMAGE" description="MOD_GN_ELASTISLIDE_SELECT_IMAGE_DESC"/>
+				<field name="elastislide_selected_image_8" type="media" label="MOD_GN_ELASTISLIDE_SELECT_IMAGE" description="MOD_GN_ELASTISLIDE_SELECT_IMAGE_DESC"/>
+				<field name="elastislide_selected_image_9" type="media" label="MOD_GN_ELASTISLIDE_SELECT_IMAGE" description="MOD_GN_ELASTISLIDE_SELECT_IMAGE_DESC"/>
+				<!--Select Images END-->
+				<!--  Directory to Gallery Start -->				
+				<field name="elastislide_spacer" type="spacer" label="MOD_GN_SPACER"/>
+				<!-- Directory to Gallery Start -->
+				<field name="elastislide_directory_root" type="text" default="/banners/" label="MOD_GN_ELASTISLIDE_DIR_MODE" description="MOD_GN_ELASTISLIDE_DIR_MODE_DESC" />
+				<field name="elastislide_directory_type" type="radio" default="full" label="MOD_GN_ELASTISLIDE_DIR_TYPE" description="MOD_GN_ELASTISLIDE_DIR_TYPE_DESC">
+					<option value="full">MOD_GN_ELASTISLIDE_DIR_TYPE_FULL</option>
+					<option value="type_based">MOD_GN_ELASTISLIDE_DIR_TYPE_SELECT</option>
+				</field>
+				<field name="elastislide_directory_type_select" type="text" default="png,gif,jpg,PNG,GIF,JPG" label="MOD_GN_ELASTISLIDE_DIR_TYPE_SELECT" description="MOD_GN_ELASTISLIDE_DIR_TYPE_SELECT_DESC"/>
+				<!--  Directory to Gallery End-->	
+			</fieldset>
+			<fieldset name="SIMPLE_CAROUSEL">
+			</fieldset>
+		</fields>
+	</config>
+</extension>
+	

@@ -1,0 +1,45 @@
+
+/**
+ * Module Gnanam Gallery - Multi-Purpose Carousel Module by Gnanakeethan
+ * 
+ * @author     Gnanakeethan Balasubramaniam <gnanakeethan@gmail.com>
+ * @copyright  (c) 2013 Gnanakeethan Balasubramaniam
+ * @license    GNU/GPL v3 or Later.
+ */
+/* Custom Elastislide Styling */
+
+
+@media screen and (max-width: 460px) {
+	.demo-3 .elastislide-horizontal {
+		padding: 10px 40px;
+	}
+}
+.gallery > .elastislide-wrapper {
+	-webkit-border-top-left-radius: 20px;
+	-moz-border-top-left-radius: 20px;
+	border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 20px;
+	-moz-border-top-right-radius: 20px;
+	border-top-right-radius: 20px;
+	background-image: url(../../images/elastislide/black_denim.png);
+}
+.gallery > .elastislide-wrapper > .elastislide-carousel > .elastislide-list > .current-img {
+	border-radius: 10px;
+	border-color: #666666;
+	border-width: 2px;
+
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+.mod_gallery_image {
+	border-radius: 10px;
+}
+#preview {
+	-webkit-border-bottom-left-radius: 20px !important;
+	-moz-border-radius-bottomleft: 20px !important;
+	border-bottom-left-radius: 20px !important;
+	border-bottom-right-radius: 20px !important;	
+	-webkit-border-bottom-right-radius: 20px !important;
+	-moz-border-radius-bottomright: 20px !important;
+	border-bottom-right-radius: 20px !important;
+}
