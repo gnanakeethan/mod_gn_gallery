@@ -11,3 +11,9 @@
 **Gallerific
 **FeaturedContentSlider
 **jcobb-basic-jquery-slider
+**Pretty Photo 
+**SliceBox
+**Slidorion
+**Bubble SlideShow
+**JQueryTimeliner
+**Z-Index-Gallery

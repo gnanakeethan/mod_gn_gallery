@@ -28,6 +28,7 @@
 				</field>
 				<field name="gallery_mode" type="list" default="elastislide" label="MOD_GN_GALLERY_MODE" description="MOD_GN_GALLERY_MODE_DESC">
 					<option value='elastislide'>MOD_GN_ELASTISLIDE</option>
+					<option value='zindex'>MOD_GN_ZINDEX</option>
 					<!--Space to Add Other -->
 				</field>
 				<field name="gallery_load_jquery" type="list" default="true" label="MOD_GN_GALLERY_JQUERY_LOAD" description="MOD_GN_GALLERY_JQUERY_LOAD_DESC">

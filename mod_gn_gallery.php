@@ -10,6 +10,6 @@
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 
-require_once (dirname(__FILE__).DS.'helper.php');
+require_once (dirname(__FILE__). DS .'helper.php');
 $gallery = new GalleryHelper($params,$module);
 $gallery->render();

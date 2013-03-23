@@ -37,6 +37,8 @@ class GalleryHelper {
 		switch ($this->config['gallery']['mode']){
 			case 'elastislide' : require (JModuleHelper::getLayoutPath('mod_gn_gallery', 'elastislide'));
 				break;
+			case 'zindex' : require (JModuleHelper::getLayoutPath('mod_gn_gallery', 'zindex'));
+				break;
 			default : require JModuleHelper::getLayoutPath('mod_gn_gallery','default');
 			
 		}
