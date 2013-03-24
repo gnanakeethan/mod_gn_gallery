@@ -1,25 +1,38 @@
-html { font-size: 16px; min-height: 100%; margin-bottom: 1px; }
-body { font-size: 62.5%; font-family: Verdana, Arial, sans-serif; color: #555555; background: #22384d url(../images/bg.jpg) repeat-x; }
-a { color: #0F67A1; text-decoration: none; }
-a:hover { text-decoration: underline; }
 
-#wrapper { background: white url(../images/sidebar_bg.jpg) repeat-y top right; }
+#gallery { position: relative; }
+#pictures { position: relative; height: 408px; }
+#pictures img { position: absolute; top: 0; left: 0; }
 
-#content { }
-  #content h1 { font-size: 2.4em; font-weight: normal; line-height: 32px; margin: 30px 0 50px 0; }
-  #content p { font-size: 1.4em; line-height: 22px; margin-bottom: 20px; }
-  
-  /* relevant for the tutorial - start */
-  #gallery { position: relative; }
-    #pictures { position: relative; height: 408px; }
-    #pictures img { position: absolute; top: 0; left: 0; }
-    
-    #prev, #next { margin-top: 30px; text-align: center; font-size: 2.0em; }
-  /* relevant for the tutorial - end */
-  
-#footer { text-align: center; margin: 50px 0 20px 0; }
+#prev, #next { margin-top: 5px; text-align: left; font-size: 1.0em; }
+img.turn5right {
+	transform: rotate(5deg);
+	-ms-transform: rotate(5deg); /* IE 9 */
+	-webkit-transform: rotate(5deg); /* Safari and Chrome */
+	-o-transform: rotate(5deg); /* Opera */
+	-moz-transform: rotate(5deg); /* Firefox */
+}
 
-#sidebar { }
-  #sidebar ul { margin-top: 20px; }
-  #sidebar ul li { font-size: 1.2em; padding: 20px 0 20px 0; border-bottom: 1px solid #dddcdc; line-height: 18px; }
-  #sidebar ul li h2 { font-size: 1.2em; margin-bottom: 8px; }
+img.turn5left {
+	transform: rotate(355deg);
+	-ms-transform: rotate(355deg); /* IE 9 */
+	-webkit-transform: rotate(355deg); /* Safari and Chrome */
+	-o-transform: rotate(355deg); /* Opera */
+	-moz-transform: rotate(355deg); /* Firefox */
+}
+img.turn2left {
+	transform: rotate(2deg);
+	-ms-transform: rotate(2deg); /* IE 9 */
+	-webkit-transform: rotate(2deg); /* Safari and Chrome */
+	-o-transform: rotate(2deg); /* Opera */
+	-moz-transform: rotate(2deg); /* Firefox */
+}
+img.turn2right{
+	transform: rotate(358deg);
+	-ms-transform: rotate(358deg); /* IE 9 */
+	-webkit-transform: rotate(358deg); /* Safari and Chrome */
+	-o-transform: rotate(358deg); /* Opera */
+	-moz-transform: rotate(358deg); /* Firefox */
+}
+img.zindex_slider {
+	border:15px groove antiquewhite;
+}

@@ -1,7 +1,11 @@
 <?php
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Module Gnanam Gallery - Multi-Purpose Carousel Module by Gnanakeethan
+ * 
+ * @package	  ModuleGNGallery
+ * @author    Gnanakeethan Balasubramaniam <gnanakeethan@gmail.com>
+ * @copyright (c) 2013 Gnanakeethan Balasubramaniam
+ * @license   GNU/GPL v3 or Later.
  */
 $doc = JFactory::getDocument();
 $doc->addStyleSheet('modules/mod_gn_gallery/assets/css/zindex/main.css');
