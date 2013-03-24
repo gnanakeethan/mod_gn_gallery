@@ -2,9 +2,10 @@
 /**
  * Module Gnanam Gallery - Multi-Purpose Carousel Module by Gnanakeethan
  * 
- * @author     Gnanakeethan Balasubramaniam <gnanakeethan@gmail.com>
- * @copyright  (c) 2013 Gnanakeethan Balasubramaniam
- * @license    GNU/GPL v3 or Later.
+ * @package	  ModuleGNGallery
+ * @author    Gnanakeethan Balasubramaniam <gnanakeethan@gmail.com>
+ * @copyright (c) 2013 Gnanakeethan Balasubramaniam
+ * @license   GNU/GPL v3 or Later.
  */
 // no direct access
 defined('_JEXEC') or die('Restricted access');
@@ -31,7 +32,7 @@ class GalleryHelper {
 		$this->config['elastislide']['selected']['image_9']				=$params->get('elastislide_selected_image_9');
 		$this->config['elastislide']['directory']['root']				=$params->get('elastislide_directory_root');
 		$this->config['elastislide']['directory']['type']				=$params->get('elastislide_directory_type');
-		$this->config['elastislide']['directory']['type']['select']		=$params->get('elastislide_directory_type_select');
+		$this->config['elastislide']['directory']['type']['select']		=$params->get('elastislide_directory_type_select');		
 	}
 	function render(){
 		switch ($this->config['gallery']['mode']){
