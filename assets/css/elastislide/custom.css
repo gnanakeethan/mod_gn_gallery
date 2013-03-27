@@ -43,3 +43,8 @@
 	-moz-border-radius-bottomright: 20px !important;
 	border-bottom-right-radius: 20px !important;
 }
+
+.fixed-bar {
+	-webkit-transform-origin-z: 10000;
+	z-index: 10000;
+}

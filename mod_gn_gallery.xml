@@ -49,7 +49,8 @@
 				</field>
 				<field name="elastislide_min" type="number" label="MOD_GN_ELASTISLIDE_MIN_ITEMS" description="MOD_GN_ELASTISLIDE_MIN_ITEMS_DESC"/>
 				<field name="elastislide_timing" type="number" label="MOD_GN_ELASTISLIDE_TIMING" description="MOD_GN_ELASTISLIDE_TIMING_DESC"/>			
-				<field name="elastislide_spacer" type="spacer" label="MOD_GN_SPACER"/>								
+				<field name="elastislide_spacer" type="spacer" label="MOD_GN_SPACER"/>		
+										
 				<!--Select Images Start-->					
 				<field name="elastislide_spacer" type="spacer" label="MOD_GN_ELASTISLIDE_MODE_SELECT_CONF"/>				
 				<field name="elastislide_selected_image_0" type="media" label="MOD_GN_ELASTISLIDE_SELECT_IMAGE" description="MOD_GN_ELASTISLIDE_SELECT_IMAGE_DESC"/>
@@ -65,7 +66,6 @@
 				<!--Select Images END-->
 				<!--  Directory to Gallery Start -->				
 				<field name="elastislide_spacer" type="spacer" label="MOD_GN_SPACER"/>
-				<!-- Directory to Gallery Start -->
 				<field name="elastislide_directory_root" type="text" default="/banners/" label="MOD_GN_ELASTISLIDE_DIR_MODE" description="MOD_GN_ELASTISLIDE_DIR_MODE_DESC" />
 				<field name="elastislide_directory_type" type="radio" default="full" label="MOD_GN_ELASTISLIDE_DIR_TYPE" description="MOD_GN_ELASTISLIDE_DIR_TYPE_DESC">
 					<option value="full">MOD_GN_ELASTISLIDE_DIR_TYPE_FULL</option>
@@ -74,7 +74,35 @@
 				<field name="elastislide_directory_type_select" type="text" default="png,gif,jpg,PNG,GIF,JPG" label="MOD_GN_ELASTISLIDE_DIR_TYPE_SELECT" description="MOD_GN_ELASTISLIDE_DIR_TYPE_SELECT_DESC"/>
 				<!--  Directory to Gallery End-->	
 			</fieldset>
-			<fieldset name="SIMPLE_CAROUSEL">
+			
+			
+			
+			<fieldset name="ZINDEX">
+				<field name="zindex_mode" type="list" label="MOD_GN_ZINDEX_MODE" description="MOD_GN_ZINDEX_MODE_DESC">					
+					<option value="select">MOD_GN_ZINDEX_MODE_SELECT</option>
+					<option value="directory_based">MOD_GN_ZINDEX_MODE_DIR</option>
+				</field>					
+				
+				<!--Select Images Start-->							
+				<field name="zindex_selected_image_0" type="media" label="MOD_GN_ZINDEX_SELECT_IMAGE" description="MOD_GN_ZINDEX_SELECT_IMAGE_DESC"/>
+				<field name="zindex_selected_image_1" type="media" label="MOD_GN_ZINDEX_SELECT_IMAGE" description="MOD_GN_ZINDEX_SELECT_IMAGE_DESC"/>
+				<field name="zindex_selected_image_2" type="media" label="MOD_GN_ZINDEX_SELECT_IMAGE" description="MOD_GN_ZINDEX_SELECT_IMAGE_DESC"/>
+				<field name="zindex_selected_image_3" type="media" label="MOD_GN_ZINDEX_SELECT_IMAGE" description="MOD_GN_ZINDEX_SELECT_IMAGE_DESC"/>
+				<field name="zindex_selected_image_4" type="media" label="MOD_GN_ZINDEX_SELECT_IMAGE" description="MOD_GN_ZINDEX_SELECT_IMAGE_DESC"/>
+				<field name="zindex_selected_image_5" type="media" label="MOD_GN_ZINDEX_SELECT_IMAGE" description="MOD_GN_ZINDEX_SELECT_IMAGE_DESC"/>
+				<field name="zindex_selected_image_6" type="media" label="MOD_GN_ZINDEX_SELECT_IMAGE" description="MOD_GN_ZINDEX_SELECT_IMAGE_DESC"/>
+				<field name="zindex_selected_image_7" type="media" label="MOD_GN_ZINDEX_SELECT_IMAGE" description="MOD_GN_ZINDEX_SELECT_IMAGE_DESC"/>
+				<field name="zindex_selected_image_8" type="media" label="MOD_GN_ZINDEX_SELECT_IMAGE" description="MOD_GN_ZINDEX_SELECT_IMAGE_DESC"/>
+				<field name="zindex_selected_image_9" type="media" label="MOD_GN_ZINDEX_SELECT_IMAGE" description="MOD_GN_ZINDEX_SELECT_IMAGE_DESC"/>
+				<!--Select Images END-->
+				<!-- Directory to Gallery Start -->
+				<field name="zindex_directory_root" type="text" default="/banners/" label="MOD_GN_ZINDEX_DIR_MODE" description="MOD_GN_ZINDEX_DIR_MODE_DESC" />
+				<field name="zindex_directory_type" type="radio" default="full" label="MOD_GN_ZINDEX_DIR_TYPE" description="MOD_GN_ZINDEX_DIR_TYPE_DESC">
+					<option value="full">MOD_GN_ZINDEX_DIR_TYPE_FULL</option>
+					<option value="type_based">MOD_GN_ZINDEX_DIR_TYPE_SELECT</option>
+				</field>
+				<field name="zindex_directory_type_select" type="text" default="png,gif,jpg,PNG,GIF,JPG" label="MOD_GN_ZINDEX_DIR_TYPE_SELECT" description="MOD_GN_ZINDEX_DIR_TYPE_SELECT_DESC"/>
+				<!--  Directory to Gallery End-->
 			</fieldset>
 		</fields>
 	</config>

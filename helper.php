@@ -32,7 +32,23 @@ class GalleryHelper {
 		$this->config['elastislide']['selected']['image_9']				=$params->get('elastislide_selected_image_9');
 		$this->config['elastislide']['directory']['root']				=$params->get('elastislide_directory_root');
 		$this->config['elastislide']['directory']['type']				=$params->get('elastislide_directory_type');
-		$this->config['elastislide']['directory']['type']['select']		=$params->get('elastislide_directory_type_select');		
+		$this->config['elastislide']['directory']['type']['select']		=$params->get('elastislide_directory_type_select');
+		$this->config['zindex']['mode']									=$params->get('zindex_mode','select');
+		$this->config['zindex']['timing']								=$params->get('zindex_timing','slow');
+		$this->config['zindex']['selected']['image_0']					=$params->get('zindex_selected_image_0');
+		$this->config['zindex']['selected']['image_1']					=$params->get('zindex_selected_image_1');
+		$this->config['zindex']['selected']['image_2']					=$params->get('zindex_selected_image_2');
+		$this->config['zindex']['selected']['image_3']					=$params->get('zindex_selected_image_3');
+		$this->config['zindex']['selected']['image_4']					=$params->get('zindex_selected_image_4');
+		$this->config['zindex']['selected']['image_5']					=$params->get('zindex_selected_image_5');
+		$this->config['zindex']['selected']['image_6']					=$params->get('zindex_selected_image_6');
+		$this->config['zindex']['selected']['image_7']					=$params->get('zindex_selected_image_7');
+		$this->config['zindex']['selected']['image_8']					=$params->get('zindex_selected_image_8');
+		$this->config['zindex']['selected']['image_9']					=$params->get('zindex_selected_image_9');
+		$this->config['zindex']['directory']['root']					=$params->get('zindex_directory_root');
+		$this->config['zindex']['directory']['type']					=$params->get('zindex_directory_type');
+		$this->config['zindex']['directory']['type']['select']			=$params->get('zindex_directory_type_select');
+		
 	}
 	function render(){
 		switch ($this->config['gallery']['mode']){

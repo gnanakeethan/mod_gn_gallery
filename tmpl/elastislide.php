@@ -17,8 +17,7 @@ $doc->addStyleSheet('modules/mod_gn_gallery/assets/css/elastislide/setup.css');
 $doc->addScript('modules/mod_gn_gallery/assets/js/elastislide/modernizr.custom.17475.js');
 $style = 'div#top{
 	background: #ffffff !important;
-	border-color:#ffffff !important;
-	
+	border-color:#ffffff !important;	
 }';
 $doc->addStyleDeclaration($style);
 switch ($this->config['elastislide']['mode']) {
@@ -41,7 +40,7 @@ switch ($this->config['elastislide']['mode']) {
 				echo '<div class="fixed-bar">';
 			}
 			echo "<ul id='carousel' class='elastislide-list'>";
-			$folder = JPATH_ROOT . '/images' . DS . $this->config['elastislide']['directory']['root'];
+			$folder = JPATH_ROOT . '/images/' . $this->config['elastislide']['directory']['root'];
 			$it = new RecursiveDirectoryIterator($folder);
 			$files = new RecursiveIteratorIterator($it, RecursiveIteratorIterator::CHILD_FIRST);
 			foreach ($files as $file) {
